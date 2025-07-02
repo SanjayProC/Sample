@@ -1,194 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Rameshwaram Cafe</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+  <!-- ✅ Character & Responsive Setup -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- ✅ SEO Tags -->
+  <meta name="description" content="Teenovo – Modern digital services built by student creators. We offer web development, video editing, and design solutions for startups and creators." />
+  <meta name="keywords" content="Teenovo, Student Agency, Web Design, Editing, Freelance, Digital Services, Chennai" />
+  <meta name="author" content="Teenovo Team" />
 
-<style>
+  <!-- ✅ Branding -->
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+  <title>Teenovo | Smart Digital Services by Students</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+  <!-- ✅ Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- ✅ Optional Font (Modern) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body { font-family: 'Inter', sans-serif; }
     html {
-  scroll-behavior: smooth;
-}
-
-</style>
-
+        scroll-behavior: smooth;
+    }
+  </style>
 </head>
+<body class="bg-white text-gray-800">
 
-<body class="bg-gray-100 font-sans">
 
-    <!-- Header -->
-    <header class="bg-white shadow-md fixed w-full top-0 z-10 p-4">
-        <div class="container mx-auto flex justify-between items-center">
-            <!-- Logo (Left Side) -->
-            <img src="logo.png" alt="Your Logo" class="h-12 w-auto">
-            <!-- Navigation Menu (Right Side) -->
-            <nav class="flex space-x-6">
-                <a href="#" class="text-gray-700 hover:text-gray-900">Home</a>
-                <a href="about.html" class="text-gray-700 hover:text-gray-900">About Us</a>
-                <a href="menu.html" class="text-gray-700 hover:text-gray-900">Menu</a>
-                <a href="#contact" class="text-gray-700 hover:text-gray-900">Contact</a>
-            </nav>
-        </div>
-    </header>
-
-    <!-- Hero Section (Brand Name in Center) -->
-    <section class="h-screen flex items-center justify-center text-gray-900">
-        <h1 class="text-3xl md:text-5xl font-bold whitespace-nowrap">The Rameshwaram Cafe</h1>
-    </section>    
-<hr>
-     <!-- About Us -->
-     <section class="px-4 py-12 max-w-6xl mx-auto">
-        <!-- About Us Heading -->
-        <h2 class="text-3xl font-bold text-center mb-6">About Us</h2>
-        
-        <!-- Brand Name with Light Grey Underline -->
-        <h3 class="text-2xl font-semibold text-center mb-4 relative inline-block">
-            The Rameshwaram Cafe
-            <span class="block w-16 h-0.5 bg-gray-300 mx-auto mt-1"></span>
-        </h3>
-        
-        <!-- About Us Paragraph -->
-        <p class="text-gray-600">
-            The Rameshwaram Cafe is a premium South Indian chain of QSR module and is a trademark registered brand under the mother company M/s. Altran Ventures Pvt. Ltd. At The Rameshwaram Café it is ensured that all the cuisines are prepared on-the-go and served hot to customers using the best and fresh high-quality ingredients, authentic recipes with the highest hygiene standards.
-        </p>
+    <!-- 🌐 Hero Header: Teenovo Landing -->
+<header class="bg-white text-orange-500 border-b border-blue-500 sticky top-0 z-50 shadow-md">
+  <div class="max-w-7xl mx-auto px-5 py-3 flex items-center justify-between">
     
-    </section>
+    <!-- Logo / Brand Name -->
+    <img src="img/logot.png" alt="Teenovo Logo" class="h-10 w-auto" />
+
+    <!-- 🔗 Navigation (customize as you add pages) -->
+    <nav class="space-x-6 hidden md:block">
+      <a href="#services" class="text-black font-medium hover:text-blue-700">Services</a>
+      <a href="#team" class="text-black font-medium hover:text-blue-700">Team</a>
+      <a href="#contact" class="text-black font-medium hover:text-blue-700">Contact</a>
+    </nav>
+
+  </div>
+</header>
+
+<section class="relative h-screen bg-cover bg-center flex items-center justify-center text-white" style="background-image: url('https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=1600&q=80');">
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-black bg-opacity-70"></div>
+
+  <!-- Content -->
+  <div class="relative z-10 text-center px-4 max-w-4xl">
+    <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6 drop-shadow-lg">
+      Build Your Website with Teenovo
+
+    </h1>
+    <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto drop-shadow">
+      We craft modern websites, edit videos, and design graphics — powered by talented students and Freelancers. Let us turn your idea into a powerful digital presence.
+    </p>
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+      <a href="#services" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg shadow-md transition duration-300">
+        Get Started
+      </a>
+      <a href="#contact" class="border border-white hover:border-blue-500 hover:text-blue-300 text-white py-3 px-8 rounded-lg transition duration-300">
+        Contact Us
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- WEB DEVELOPMENT -->
+<section class="bg-white py-20">
+  <div class="max-w-7xl mx-auto px-6 flex flex-col-reverse md:flex-row items-center gap-10">
+    <!-- Text Box -->
+    <div class="w-full md:w-1/2">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">Website Development</h2>
+      <p class="text-gray-600 mb-6">
+        We build modern, responsive websites that represent your brand professionally. Whether you're a startup, creator, or business — we turn your idea into a stunning web experience.
+      </p>
+      <ul class="text-gray-700 list-disc pl-5 space-y-2">
+        <li>Fast loading, SEO friendly</li>
+        <li>Mobile optimized & user-friendly</li>
+        <li>Built using modern tech stack</li>
+      </ul>
+    </div>
+
+    <!-- Image -->
+    <div class="w-full md:w-1/2">
+      <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80" alt="Website Development" class="rounded-xl shadow-md" />
+    </div>
+  </div>
+</section>
+
+<!-- VIDEO EDITING -->
+<section class="bg-gray-100 py-20">
+  <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-10">
+    <!-- Image -->
+    <div class="w-full md:w-1/2">
+      <img src="img/eee.png" alt="Video Editing" class="rounded-xl shadow-md" />
+    </div>
+
+    <!-- Text Box -->
+    <div class="w-full md:w-1/2">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">Video Editing</h2>
+      <p class="text-gray-600 mb-6">
+        We create scroll-stopping edits for YouTube, Reels, and promotional videos. Our editing enhances your story and grabs attention with cinematic cuts, sound, and effects.
+      </p>
+      <ul class="text-gray-700 list-disc pl-5 space-y-2">
+        <li>Reels, Shorts, Vlogs, Promo</li>
+        <li>Fast turnaround & creative edits</li>
+        <li>Student-powered, fresh style</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- GRAPHIC DESIGN -->
+<section class="bg-white py-20">
+  <div class="max-w-7xl mx-auto px-6 flex flex-col-reverse md:flex-row items-center gap-10">
+    <!-- Text Box -->
+    <div class="w-full md:w-1/2">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">Graphic Design</h2>
+      <p class="text-gray-600 mb-6">
+        From social media posts to logos and thumbnails, we design eye-catching visuals that connect with your audience. Sharp, stylish, and student-driven.
+      </p>
+      <ul class="text-gray-700 list-disc pl-5 space-y-2">
+        <li>Logo & branding</li>
+        <li>Social media creatives</li>
+        <li>Thumbnails, flyers, business cards</li>
+      </ul>
+    </div>
+
+    <!-- Image -->
+    <div class="w-full md:w-1/2">
+      <img src="img/desgin.jpg" alt="Graphic Design" class="rounded-xl shadow-md" />
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section id="contact" class="relative bg-gradient-to-br from-blue-700 via-blue-600 to-indigo-700 text-white py-24">
+  <div class="max-w-6xl mx-auto px-6 lg:px-10 text-center">
     
-    </div>
-    <hr>
+    <!-- Title -->
+    <h2 class="text-4xl md:text-5xl font-bold mb-4 drop-shadow-md">Cilents Area</h2>
+    <p class="text-lg md:text-xl text-blue-100 mb-10 max-w-2xl mx-auto">
+      Let our student-powered team build your brand. We design, develop, and deliver results with passion.
+    </p>
 
-<!-- Header -->
-<div class="text-center mt-10">
-    <h1 class="text-4xl font-bold uppercase">Our Menu</h1>
-</div>
-
-<!-- Timing Badge -->
-<div class="flex justify-center mt-4">
-    <span class="bg-orange-600 text-white text-sm px-4 py-2 rounded-lg font-semibold">
-        6:30am to 11:30am & 4pm to 1am
-    </span>
-</div>
-
-<!-- Menu Grid -->
-<div class="max-w-4xl mx-auto mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
-    
-    <!-- Vada Section -->
-    <div class="bg-gray-100 p-4 rounded-lg shadow">
-        <h2 class="text-xl font-bold">VADA</h2>
-        <p class="text-gray-700">Vada (2)</p>
-        <p class="text-gray-700">Mini Vada Sambar Dip</p>
-    </div>
-
-    <!-- Idli Section -->
-    <div class="bg-gray-100 p-4 rounded-lg shadow">
-        <h2 class="text-xl font-bold">IDLI VARIETIES</h2>
-        <p class="text-gray-700">Idli</p>
-        <p class="text-gray-700">Ghee/Butter Idli</p>
-        <p class="text-gray-700">Ghee Pudi Idli</p>
-        <p class="text-gray-700">Lemon Idli</p>
-        <p class="text-gray-700">Ghee Sambar Button Idli</p>
-    </div>
-
-    <!-- Special Dishes Section -->
-    <div class="bg-gray-100 p-4 rounded-lg shadow">
-        <h2 class="text-xl font-bold">SPECIAL DISHES</h2>
-        <p class="text-gray-700">Ven Pongal</p>
-        <p class="text-gray-700">Sakkarai Pongal</p>
-        <p class="text-gray-700">Khara Bhath</p>
-        <p class="text-gray-700">Kesari Bhath</p>
-        <p class="text-gray-700">Ghee Pudi Khara Bhath</p>
-        <p class="text-gray-700">Poori Saagu (2)</p>
-    </div>
-
-    <!-- Sweets Section -->
-    <div class="bg-gray-100 p-4 rounded-lg shadow">
-        <h2 class="text-xl font-bold">SWEETS</h2>
-        <p class="text-gray-700">Gulab Jamun</p>
-    </div>
-
-</div>
-
-<!-- Button -->
-<div class="text-center mt-6">
-    <a href="menu.html" class="bg-gray-900 text-white px-6 py-3 rounded-md text-lg font-semibold hover:bg-gray-700">
-        View Our Complete Menu
+    <!-- CTA Button -->
+    <a href="https://forms.gle/YOUR_GOOGLE_FORM_LINK" target="_blank" class="inline-block bg-white text-blue-800 font-semibold py-3 px-10 rounded-lg shadow-xl hover:bg-blue-100 transition duration-300">
+       Fill Our Client Form
     </a>
-</div>
+
+    <!-- Guarantee -->
+    <p class="mt-5 text-sm text-blue-200">Replies within 12–24 hours. Custom quotes. Real humans.</p>
+
+    <!-- Divider -->
+    <div class="border-t border-blue-400 my-12 w-24 mx-auto"></div>
+
+    <!-- FAQ Style Info -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left mt-8">
+      
+      <div>
+        <h3 class="text-xl font-bold mb-2">What We Offer</h3>
+        <ul class="text-blue-100 list-disc list-inside">
+          <li>Website Design & Development</li>
+          <li>Reels, YouTube, Promo Editing</li>
+          <li>Logo, Poster, and Thumbnail Design</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-bold mb-2">Form Includes</h3>
+        <ul class="text-blue-100 list-disc list-inside">
+          <li>Your Name & Email</li>
+          <li>Project Type (Web / Edit / Design)</li>
+          <li>Project Budget & Timeline</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-bold mb-2">How You’ll Hear From Us</h3>
+        <ul class="text-blue-100 list-disc list-inside">
+          <li>WhatsApp or Email within 1 day</li>
+          <li>We'll review, quote & schedule</li>
+          <li>Support from Team Teenovo</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
 
 
-<!-- Main Section -->
-<div class="max-w-6xl mx-auto px-6 py-16 flex flex-col md:flex-row items-center justify-between">
-    
-    <!-- Text Section -->
-    <div class="text-center md:text-left">
-        <p class="text-orange-600 text-xl italic font-semibold">Authentic</p>
-        <h1 class="text-5xl md:text-6xl font-bold text-gray-900">TASTEFUL</h1>
-        <div class="w-20 h-[2px] bg-gray-700 mx-auto md:mx-0 mt-3"></div>
+
+
+
+
+
+
+<section class="bg-white text-gray-900 py-24 px-6" id="work-with-teenovo">
+  <div class="max-w-6xl mx-auto text-center">
+
+    <!-- Title -->
+    <h2 class="text-4xl md:text-5xl font-bold mb-6 text-black">Work With <span class="text-[#0024c0]">Teenovo</span></h2>
+    <p class="text-lg md:text-xl text-gray-600 mb-12 max-w-2xl mx-auto">
+      Teenovo is powered by student creators. We help clients grow online, and give real project experience to young talents.
+    </p>
+
+    <!-- Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 text-left">
+      
+      <!-- CLIENT BLOCK -->
+      <div class="bg-blue-50 p-8 rounded-xl shadow-md">
+        <h3 class="text-2xl font-semibold text-blue-800 mb-4">For Clients</h3>
+        <p class="text-gray-700 mb-4">
+          Hire our student-powered digital team to build your website, edit videos, or design graphics. Our team delivers quality work with passion, speed, and creativity.
+        </p>
+        <ul class="list-disc list-inside text-sm text-gray-600 mb-6">
+          <li>Affordable pricing</li>
+          <li>Direct communication with team</li>
+          <li>Support via WhatsApp/email</li>
+        </ul>
+        <a href="https://forms.gle/YOUR_CLIENT_FORM" target="_blank" class="inline-block bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-lg font-medium transition">
+          Fill Client Form
+        </a>
+      </div>
+
+      <!-- TEAM BLOCK -->
+      <div class="bg-indigo-50 p-8 rounded-xl shadow-md">
+        <h3 class="text-2xl font-semibold text-indigo-800 mb-4">For Creators</h3>
+        <p class="text-gray-700 mb-4">
+          Want to earn, grow, and work on real projects? Join Teenovo as a team member. We share 90% of every project payment with the person who does the work.
+        </p>
+        <ul class="list-disc list-inside text-sm text-gray-600 mb-6">
+          <li>Get real clients & income</li>
+          <li>Learn teamwork, deadlines & delivery</li>
+          <li>Build your portfolio while studying</li>
+        </ul>
+        <a href="https://forms.gle/YOUR_TEAM_JOIN_FORM" target="_blank" class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white py-3 px-6 rounded-lg font-medium transition">
+          Join Teenovo Team
+        </a>
+      </div>
+
     </div>
 
-    <!-- Image Grid -->
-    <div class="grid grid-cols-2 gap-5 mt-10 md:mt-0">
-        <img src="Dosa.webp" alt="Dosa" class="rounded-lg shadow-lg">
-        <img src="idly.jpg" alt="Idli" class="rounded-lg shadow-lg">
-        <img src="podi-idly.jpg" alt="Pudi Idli" class="rounded-lg shadow-lg">
-        <img src="vada.jpg" alt="Vada" class="rounded-lg shadow-lg">
-    </div>
-</div>
-<!-- Contact Section -->
-<section id="contact">
-    <div class="text-center mt-10">
-        <h1 class="text-4xl font-bold uppercase">Contact</h1>
-    </div>    
-<div class="max-w-6xl mx-auto px-6 py-16 text-center">
-    
-    <!-- Top Contact Info -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-gray-800">
-        
-        <!-- Location -->
-        <div>
-            <h3 class="text-xl font-semibold italic text-orange-600">Our Location</h3>
-            <p class="mt-2 text-gray-700">
-                119, 12th B Cross, 19th Main, J P Nagar 2nd Phase, Bangalore, Karnataka - 560078
-            </p>
-        </div>
+    <!-- Footer Note -->
+    <p class="mt-12 text-sm text-gray-500">
+      We are not an agency. We are a student movement. Built for learning. Powered by passion.
+    </p>
+  </div>
+</section>
 
-        <!-- Phone -->
-        <div>
-            <h3 class="text-xl font-semibold italic text-orange-600">Phone Number</h3>
-            <p class="mt-2 text-gray-700">8151999191</p>
-        </div>
 
-        <!-- Email -->
-        <div>
-            <h3 class="text-xl font-semibold italic text-orange-600">Email Us</h3>
-            <p class="mt-2 text-gray-700">info@therameshwaramcafe.org</p>
-        </div>
-        
-    </div>
 
-    <!-- Branches -->
-    <h3 class="text-2xl font-semibold italic text-orange-600 mt-12">Our Branches</h3>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-4 text-gray-700">
-        <p>2984, 12th Main, HAL 2nd Stage, Indiranagar, Bangalore - 560008</p>
-        <p>52, Outer Ring Road, J P Nagar 2nd Phase, Bengaluru, Karnataka - 560076</p>
-        <p>1, Green Avenue, ITPL Road, Brookefield, Bengaluru, Karnataka - 560037</p>
-    </div>
+<hr class="border-gray-400">
 
-    <!-- Google Map -->
-    <div class="mt-12">
-        <iframe class="w-full h-80 rounded-lg shadow-md" 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31113.25692737169!2d77.56711493476564!3d12.971598999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1671e1f6f6a5%3A0x742a8ebf8ed9d1b!2sThe%20Rameshwaram%20Cafe!5e0!3m2!1sen!2sin!4v1700000000000" 
-            allowfullscreen="" loading="lazy"></iframe>
+
+
+
+<section id="team" class="relative py-24 bg-gradient-to-br from-gray-50 via-blue-100 to-purple-100">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+
+    <!-- Section Title -->
+    <h2 class="text-4xl md:text-5xl font-bold mb-4">Meet Our Team</h2>
+    <p class="text-lg text-gray-600 mb-12 max-w-2xl mx-auto">
+      We are students, creators, and builders. Teenovo is led by passionate minds who believe in real work, real skills, and real opportunities.
+    </p>
+
+    <!-- Team Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mb-16">
+
+      <!-- Founder: Sanjay -->
+      <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 text-center">
+        <img src="https://avatars.githubusercontent.com/u/139694963?v=4" alt="Sanjay" class="w-32 h-32 mx-auto rounded-full border-4 border-blue-600 shadow-md mb-4">
+        <h3 class="text-2xl font-bold mb-1">Sanjay</h3>
+        <p class="text-blue-700 font-medium mb-2">Founder & Backend Developer</p>
+        <p class="text-sm text-gray-700 mb-4">
+          CSE – Kings Engineering College<br>2nd Year • Full-Stack & Visionary
+        </p>
+        <p class="text-sm italic text-gray-500">“I started Teenovo to give student developers real work, real value, and real income.”</p>
+      </div>
+
+      <!-- Co-Founder: Abirami -->
+      <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 text-center">
+        <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Abirami" class="w-32 h-32 mx-auto rounded-full border-4 border-purple-500 shadow-md mb-4">
+        <h3 class="text-2xl font-bold mb-1">Abirami</h3>
+        <p class="text-purple-700 font-medium mb-2">Co-Founder & Data Scientist</p>
+        <p class="text-sm text-gray-700 mb-4">
+          AIDS – Agni College of Technology<br>2nd Year • Data & AI Specialist
+        </p>
+        <p class="text-sm italic text-gray-500">“Teenovo is where students become professionals — learning by doing.”</p>
+      </div>
+
     </div>
 
-    <!-- Footer -->
-    <div class="mt-12 border-t pt-6 text-gray-600 text-sm">
-        <p>Copyright © 2022 The Rameshwaram Cafe. All Rights Reserved</p>
-        <p class="mt-2">Design By Sanjay</p>
-    </div>
-
-</div>
+    <!-- CTA: Join Our Team -->
 </section>
 
 
@@ -199,8 +316,115 @@
 
 
 
-    
+<section id="about" class="py-24 px-6 bg-white text-gray-900">
+  <div class="max-w-6xl mx-auto text-center">
 
-    
+    <!-- Heading -->
+    <h2 class="text-4xl md:text-5xl font-bold mb-6 text-black">About Us</h2>
+    <p class="text-lg text-gray-600 mb-12 max-w-2xl mx-auto">
+      Teenovo isn’t just a service — it’s a student-powered revolution. Built by real students. For real work. With real results.
+    </p>
+
+    <!-- Story Layout -->
+    <div class="flex flex-col md:flex-row items-center gap-10 text-left">
+      
+      <!-- Founder Photo -->
+     <div class="w-full md:w-1/2 flex justify-center">
+  <div class="w-full md:w-1/2 flex justify-center">
+<div class="relative w-fit mx-auto rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-indigo-500 p-[3px] animate-pulse shadow-xl shadow-indigo-300">
+  <img src="img/logo.png"
+       alt="Sanjay"
+       class="w-32 h-32 md:w-60 md:h-60 object-cover rounded-full bg-white p-1" />
+</div>
+</div>
+
+</div>
+
+
+      <!-- Brand Story -->
+      <div class="w-full md:w-1/2">
+        <h3 class="text-2xl font-semibold text-gray-800 mb-4">Our Mission</h3>
+        <p class="text-gray-700 mb-4 leading-relaxed">
+          I’m Sanjay — a CSE student, full-stack developer, and founder of Teenovo. I started this company with a simple belief: <strong>students can lead real businesses</strong> if given the platform.
+        </p>
+        <p class="text-gray-700 mb-4 leading-relaxed">
+          Teenovo is a creative studio powered by young minds. We build websites, edit content, design visuals — and most importantly, we grow together.
+        </p>
+        <p class="text-gray-600 italic">
+          Built in dorm rooms. Powered by Wi-Fi. Driven by dreams.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="bg-white text-gray-800 pt-20 pb-10 px-6 border-t border-gray-200">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
+
+    <!-- LOGO + TAGLINE -->
+    <div class="md:col-span-2">
+      <h2 class="text-4xl font-extrabold text-gray-900 mb-3">Teenovo</h2>
+      <p class="text-gray-500 text-base leading-relaxed">
+        Built by students. Trusted by clients.  
+        Teenovo is where young creators deliver real results.  
+        Web, Design, Content – all in one place.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div>
+      <h4 class="text-lg font-semibold mb-4">Explore</h4>
+      <ul class="space-y-3 text-sm text-gray-600">
+        <li><a href="#about" class="hover:text-black transition">About Us</a></li>
+        <li><a href="#team" class="hover:text-black transition">Our Team</a></li>
+        <li><a href="#work-with-teenovo" class="hover:text-black transition">Work With Us</a></li>
+        <li><a href="#contact" class="hover:text-black transition">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Social Media -->
+    <div>
+      <h4 class="text-lg font-semibold mb-4">Follow Us</h4>
+      <div class="flex items-center gap-5 text-2xl">
+        <!-- LinkedIn -->
+        <a href="https://linkedin.com/in/YOUR_LINK" target="_blank" class="text-gray-500 hover:text-blue-700 transition">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <!-- YouTube -->
+        <a href="https://youtube.com/@YOUR_CHANNEL" target="_blank" class="text-gray-500 hover:text-red-600 transition">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <!-- Instagram -->
+        <a href="https://instagram.com/YOUR_HANDLE" target="_blank" class="text-gray-500 hover:text-pink-600 transition">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Divider -->
+  <div class="border-t border-gray-200 mt-16 pt-6 text-center text-sm text-gray-500">
+    © 2025 Teenovo. Built by students. Powered by passion.
+  </div>
+</footer>
+
+
+
+
 </body>
 </html>
